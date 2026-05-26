@@ -11,7 +11,7 @@
     <!-- Lucide للأيقونات -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- ملف التنسيق -->
-    <link rel="stylesheet" href="style.css?v=1.0.30">
+    <link rel="stylesheet" href="style.css?v=1.0.31">
 </head>
 <body>
     <div class="app-container">
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="select-group">
                                     <label for="nameSize">حجم الخط</label>
-                                    <input type="range" id="nameSize" min="10" max="120" value="50" class="custom-range">
+                                    <input type="range" id="nameSize" min="10" max="120" value="32" class="custom-range">
                                 </div>
                             </div>
 
@@ -86,9 +86,9 @@
                                 <div class="sub-range-group">
                                     <div class="range-labels">
                                         <span>الموقع الرأسي (Y)</span>
-                                        <span id="nPosYVal">53%</span>
+                                        <span id="nPosYVal">36%</span>
                                     </div>
-                                    <input type="range" id="nPosY" min="10" max="95" value="53">
+                                    <input type="range" id="nPosY" min="10" max="95" value="36">
                                 </div>
                             </div>
 
@@ -96,11 +96,11 @@
                             <div class="color-picker-section">
                                 <span>لون خط الاسم:</span>
                                 <div class="colors-grid" id="nameColors">
+                                    <button class="color-btn active" data-color="#7B0251" style="background-color: #7B0251;"></button>
                                     <button class="color-btn" data-color="#D4AF37" style="background-color: #D4AF37;"></button>
-                                    <button class="color-btn active" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ccc;"></button>
-                                    <button class="color-btn" data-color="#FFF3CD" style="background-color: #FFF3CD;"></button>
+                                    <button class="color-btn" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ccc;"></button>
                                     <button class="color-btn" data-color="#000000" style="background-color: #000000; border: 1px solid #fff;"></button>
-                                    <input type="color" id="nCustomColor" value="#FFFFFF">
+                                    <input type="color" id="nCustomColor" value="#7B0251">
                                 </div>
                             </div>
                         </div>
@@ -155,6 +155,6 @@
     </div>
 
     <!-- ملف التفاعل البرمجي -->
-    <script src="script.js?v=1.0.30"></script>
+    <script src="script.js?v=1.0.31"></script>
 </body>
 </html>

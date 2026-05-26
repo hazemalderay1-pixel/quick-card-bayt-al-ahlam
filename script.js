@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // الإعدادات البصرية الموحدة لكل البطاقات
     const nameStyle = {
         fontFamily: "IBM Plex Sans Arabic",
-        fontSize: 50,
+        fontSize: 32,
         xPercent: 50,
-        yPercent: 53,
-        color: "#FFFFFF",
+        yPercent: 36,
+        color: "#7B0251",
         width: 0,
-        height: 50
+        height: 32
     };
 
     // --- تحميل قوالب البطاقات المربعة ---
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // ضبط إعدادات الخط
         let activeFontSize = nameStyle.fontSize;
-        ctx.font = `bold ${activeFontSize}px "${nameStyle.fontFamily}", Cairo, sans-serif`;
+        ctx.font = `${activeFontSize}px "${nameStyle.fontFamily}", Cairo, sans-serif`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
 
@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         while (measuredWidth > maxWidth && activeFontSize > 10) {
             activeFontSize -= 2;
-            ctx.font = `bold ${activeFontSize}px "${nameStyle.fontFamily}", Cairo, sans-serif`;
+            ctx.font = `${activeFontSize}px "${nameStyle.fontFamily}", Cairo, sans-serif`;
             measuredWidth = ctx.measureText(displayText).width;
         }
 
